@@ -23,7 +23,11 @@ const Profile = () => {
   const handleClose2 = () => {
     setAnchorEl2(null);
   };
+  const handleLogout = () => {
 
+    localStorage.clear();
+    window.location.reload();
+  };
   return (
     <Box>
       <IconButton
@@ -84,7 +88,9 @@ const Profile = () => {
           <ListItemText>My Tasks</ListItemText>
         </MenuItem>
         <Box mt={1} py={1} px={2}>
-          <Button to="/auth/login" variant="outlined" color="primary" component={Link} fullWidth>
+          <Button to="/auth/login" variant="outlined" color="primary" component={Link} fullWidth
+                  onClick={handleLogout}
+          >
             Logout
           </Button>
         </Box>

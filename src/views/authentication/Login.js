@@ -10,11 +10,6 @@ import AuthLogin from './auth/AuthLogin';
 const Login2 = () => {
   const [value, setValue] = useState('');
 
-  const logout = () => {
-    localStorage.clear();
-    window.location.reload();
-  };
-
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
       setValue(data.user.email);
@@ -27,7 +22,7 @@ const Login2 = () => {
   }, []);
 
 
-  if (value) {
+ if (value) {
     return <Navigate to="/dashboard" />;
   }
 
@@ -97,7 +92,6 @@ const Login2 = () => {
                   Sign in With Google
                 </Button>
               )}
-              <button onClick={logout}>Logout</button>
             </Card>
           </Grid>
         </Grid>

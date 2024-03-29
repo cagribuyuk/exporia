@@ -1,5 +1,6 @@
 import {
-  IconAperture, IconCopy, IconLayoutDashboard, IconLogin, IconMoodHappy, IconTypography, IconUserPlus
+  IconBrandTripadvisor,IconAperture, IconCheckbox,
+  IconCopy, IconLayoutDashboard, IconLogin, IconMoodHappy, IconTypography, IconUserCircle, IconUserPlus,
 } from '@tabler/icons';
 
 import { uniqueId } from 'lodash';
@@ -15,6 +16,19 @@ const Menuitems = [
     title: 'Dashboard',
     icon: IconLayoutDashboard,
     href: '/dashboard',
+  },
+  {
+    id: uniqueId(),
+    title: 'Offered Trips',
+    icon: IconBrandTripadvisor,
+    href: '/offeredtrips',
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Survey',
+    icon: IconCheckbox,
+    href: '/survey',
   },
   {
     navlabel: true,
@@ -60,8 +74,8 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: 'Sample Page',
-    icon: IconAperture,
+    title: 'User Profile',
+    icon: IconUserCircle,
     href: '/sample-page',
   },
 ];
