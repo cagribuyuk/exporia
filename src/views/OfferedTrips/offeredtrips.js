@@ -5,7 +5,7 @@ import DashboardCard from '../../components/shared/DashboardCard';
 import izmirImage from '../../assets/images/izmir.jpg';
 import antalyaImage from '../../assets/images/antalya.jpg';
 import kapadokyaImage from '../../assets/images/kapadokya.jpg';
-import DialogTrips from './dialogTrips'; // dialogTrips bileşenini import ettik
+import DialogTrips from './dialogTrips'; 
 
 const OfferedTrips = () => {
   const [trip, setTrip] = useState('1');
