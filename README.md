@@ -16,9 +16,9 @@
   Built-in Mapbox and Google Maps APIs enhance route visualization and location discovery.
 
 - 🌐 **Full-Stack Architecture**  
-  - **Frontend:** Modern and responsive interface
+  - **Frontend:** Modern and responsive interface with React
   - **Backend:** Built with Go (Golang) for performance and scalability
-  - **Database:** Stores user preferences and travel suggestions efficiently
+  - **Database:** PostgreSQL used. Stores user preferences and travel suggestions efficiently
 
 ---
 
