@@ -25,7 +25,7 @@
 ## 🛠️ Technologies Used
 
 - Go (Golang) — Backend
-- React + Vite - Frontend
+- React - Frontend
 - RESTful API design
 - Google Maps API, Mapbox
 - Firebase (Authentication & Hosting)
